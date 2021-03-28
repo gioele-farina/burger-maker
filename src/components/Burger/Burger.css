@@ -1,0 +1,6 @@
+.burgerContainer {
+  width: 600px;
+  min-height: 400px;
+  margin: auto;
+  border: 1px solid black;
+}
