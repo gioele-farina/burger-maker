@@ -3,14 +3,21 @@ import classes from './Burger.css';
 import Ingredient from './Ingredient/Ingredient';
 
 const burger = (props) => {
-  return (
+  let ingredients = null;
 
+  if (props.myBurger.length === 0) {
+    ingredients = <p key="noel" className={classes.emptyBurger}>Please add some ingredients</p>;
+  } else {
+    ingredients = props.myBurger.map((ing, i) => {
+      return <Ingredient type={ing} key={ing+i} />;
+    });
+    ingredients.reverse();
+  }
+
+  return (
     <div className={classes.burgerContainer}>
       <Ingredient type="BreadTop" />
-      <Ingredient type="Meat" />
-      <Ingredient type="Cheese" />
-      <Ingredient type="Salad" />
-      <Ingredient type="Bacon" />
+        {ingredients}
       <Ingredient type="BreadBottom" />
     </div>
   );

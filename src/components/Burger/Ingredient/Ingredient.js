@@ -32,6 +32,8 @@ class Ingredient extends Component {
      case 'Bacon':
       renderedIng = <div className={classes.Bacon}></div>;
       break;
+     default:
+      renderedIng = null;
     }
 
     return (

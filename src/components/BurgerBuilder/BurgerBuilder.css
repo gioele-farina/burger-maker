@@ -1,0 +1,32 @@
+.ingredientsList {
+  padding: 15px;
+}
+
+.ingredientsList ul {
+  list-style: none;
+}
+.ingredientsList ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.ingName {
+  margin: 0 10px 0 10px;
+}
+.ingPrice {
+
+}
+
+.addButton {
+  color: #f08e4a;
+  font-size: 30px;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+}

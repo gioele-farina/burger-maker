@@ -1,6 +1,11 @@
 .burgerContainer {
-  width: 600px;
+  max-width: 600px;
   min-height: 400px;
   margin: auto;
   border: 1px solid black;
+  flex-grow: 1;
+}
+
+.emptyBurger {
+  text-align: center;
 }
