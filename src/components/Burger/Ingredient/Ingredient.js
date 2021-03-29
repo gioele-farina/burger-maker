@@ -23,25 +23,25 @@ class Ingredient extends Component {
      case 'Meat':
       renderedIng =
       <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
-        <div className={classes.Meat + " " + classes.removeIng}></div>
+        <div className={classes.Meat}></div>
       </div>;
       break;
      case 'Cheese':
       renderedIng =
       <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
-        <div className={classes.Cheese + " " + classes.removeIng}></div>
+        <div className={classes.Cheese}></div>
       </div>;
       break;
      case 'Salad':
       renderedIng =
       <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
-        <div className={classes.Salad + " " + classes.removeIng}></div>
+        <div className={classes.Salad}></div>
       </div>;
       break;
      case 'Bacon':
       renderedIng =
       <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
-        <div className={classes.Bacon + " " + classes.removeIng}></div>
+        <div className={classes.Bacon}></div>
       </div>;
       break;
      default:
