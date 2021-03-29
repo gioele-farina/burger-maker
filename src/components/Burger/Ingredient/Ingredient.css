@@ -85,14 +85,14 @@
     width: 80%;
     height: 40px;
     background: linear-gradient(#7f3608, #702e05);
-    margin: 2% auto;
+    margin: 0 auto;
     border-radius: 15px;
 }
 
 .Cheese {
     width: 90%;
     height: 15px;
-    margin: 2% auto;
+    margin: 0 auto;
     background: linear-gradient(#f4d004, #d6bb22);
     border-radius: 20px;
 }
@@ -100,7 +100,7 @@
 .Salad {
     width: 85%;
     height: 20px;
-    margin: 2% auto;
+    margin: 0 auto;
     background: linear-gradient(#228c1d, #91ce50);
     border-radius: 20px;
 }
@@ -109,14 +109,12 @@
     width: 80%;
     height: 8px;
     background: linear-gradient(#bf3813, #c45e38);
-    margin: 2% auto;
+    margin: 0 auto;
 }
 
-.Meat,
-.Cheese,
-.Salad,
-.Bacon {
-  cursor: pointer;
+.ingWrapper {
+  padding: 6px;
+  cursor: url('../../../assets/delete-cursor.png'), pointer;
 }
 
 .Meat:hover,

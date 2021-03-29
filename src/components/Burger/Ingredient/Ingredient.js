@@ -21,16 +21,28 @@ class Ingredient extends Component {
       renderedIng = <div className={classes.BreadBottom}></div>;
       break;
      case 'Meat':
-      renderedIng = <div className={classes.Meat} onClick={() => this.props.removeIng(this.props.index)}></div>;
+      renderedIng =
+      <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
+        <div className={classes.Meat + " " + classes.removeIng}></div>
+      </div>;
       break;
      case 'Cheese':
-      renderedIng = <div className={classes.Cheese} onClick={() => this.props.removeIng(this.props.index)}></div>;
+      renderedIng =
+      <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
+        <div className={classes.Cheese + " " + classes.removeIng}></div>
+      </div>;
       break;
      case 'Salad':
-      renderedIng = <div className={classes.Salad} onClick={() => this.props.removeIng(this.props.index)}></div>;
+      renderedIng =
+      <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
+        <div className={classes.Salad + " " + classes.removeIng}></div>
+      </div>;
       break;
      case 'Bacon':
-      renderedIng = <div className={classes.Bacon} onClick={() => this.props.removeIng(this.props.index)}></div>;
+      renderedIng =
+      <div className={classes.ingWrapper} onClick={() => this.props.removeIng(this.props.index, this.props.type)}>
+        <div className={classes.Bacon + " " + classes.removeIng}></div>
+      </div>;
       break;
      default:
       renderedIng = null;

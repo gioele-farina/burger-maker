@@ -39,11 +39,25 @@ class App extends Component {
     });
   }
 
-  removeIng = (index) => {
+  removeIng = (index, type) => {
     let newChosenList = this.state.chosenIng;
     newChosenList.splice(index, 1);
     this.setState({
       chosenIng: newChosenList
+    });
+
+    let oldPrice = this.state.price;
+    let newPrice = 0;
+    this.state.ingredients.forEach((item, i) => {
+      if (item.name === type) {
+        newPrice = item.price;
+      }
+    });
+
+    let finalPrice = parseFloat(oldPrice) - parseFloat(newPrice);
+    finalPrice = finalPrice.toFixed(2);
+    this.setState({
+      price: finalPrice
     });
   }
 
