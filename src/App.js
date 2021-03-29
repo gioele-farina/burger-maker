@@ -39,6 +39,14 @@ class App extends Component {
     });
   }
 
+  removeIng = (index) => {
+    let newChosenList = this.state.chosenIng;
+    newChosenList.splice(index, 1);
+    this.setState({
+      chosenIng: newChosenList
+    });
+  }
+
   render() {
     return (
       <Layout>
@@ -47,7 +55,7 @@ class App extends Component {
            addIngr={this.addIngr}
            price={this.state.price} />
 
-         <Burger myBurger={this.state.chosenIng} />
+         <Burger myBurger={this.state.chosenIng} removeIng={this.removeIng}/>
       </Layout>
     );
   }

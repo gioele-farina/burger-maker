@@ -14,6 +14,10 @@
   margin: 10px 0;
 }
 
+.ingredientsList ul li:hover .addButton {
+  filter: brightness(1.2);  
+}
+
 .ingName {
   margin: 0 10px 0 10px;
 }

@@ -9,7 +9,7 @@ const burger = (props) => {
     ingredients = <p key="noel" className={classes.emptyBurger}>Please add some ingredients</p>;
   } else {
     ingredients = props.myBurger.map((ing, i) => {
-      return <Ingredient type={ing} key={ing+i} />;
+      return <Ingredient type={ing} key={ing+i} index={i} removeIng={props.removeIng}/>;
     });
     ingredients.reverse();
   }

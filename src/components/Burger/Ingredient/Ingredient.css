@@ -111,3 +111,17 @@
     background: linear-gradient(#bf3813, #c45e38);
     margin: 2% auto;
 }
+
+.Meat,
+.Cheese,
+.Salad,
+.Bacon {
+  cursor: pointer;
+}
+
+.Meat:hover,
+.Cheese:hover,
+.Salad:hover,
+.Bacon:hover {
+  filter: brightness(0.8);
+}
