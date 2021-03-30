@@ -42,17 +42,17 @@ class CheckOut extends Component {
 
         <div className={this.state.summaryActive ? classes.backdrop : classes.backdrop + " " + classes.disabled}
         onClick={()=> this.summaryActiveHandler(false)}
-        >
+        ></div>
 
-          <div className={classes.summary}>
-              <h3>Your delicious Burger!</h3>
-              <ul>
-                {displayedSummary}
-              </ul>
+        <div className={this.state.summaryActive ? classes.summary : classes.summary + " " + classes.disabled}>
+            <h3>Your delicious Burger!</h3>
+            <ul>
+              {displayedSummary}
+            </ul>
 
-              <h4>Price: {this.props.price}€</h4>
-          </div>
+            <h4>Price: {this.props.price}€</h4>
         </div>
+
 
       </ Wrapper>
     )

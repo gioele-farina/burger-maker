@@ -23,15 +23,17 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .backdrop.disabled {
   display: none;
 }
 
 .summary {
+  position: fixed;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 60%;
   min-width: 300px;
   min-height: 200px;
@@ -39,8 +41,14 @@
   border-radius: 10px;
   text-align: center;
   padding: 20px;
+  cursor: default;
 }
-
+.summary * {
+  cursor: default !important; 
+}
+.summary.disabled {
+  display: none;
+}
 .summary ul {
   list-style: none;
 }
