@@ -1,5 +1,6 @@
 .burgerContainer {
   max-width: 600px;
+  min-width: 300px;
   min-height: 400px;
   margin: auto;
   flex-grow: 1;

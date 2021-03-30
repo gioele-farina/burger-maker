@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './BurgerBuilder.css';
+import CheckOut from "./CheckOut/CheckOut";
 
 const burgerBuilder = (props) => {
 
@@ -23,7 +24,9 @@ const burgerBuilder = (props) => {
         {ingredientsList}
       </ul>
       <div>
-        <p>Price: {props.price}€.</p>
+        <p className={classes.finalPrice}>Price: {props.price}€.</p>
+
+        <CheckOut chosenIng={props.chosenIng} price={props.price} />
       </div>
     </div>
   );

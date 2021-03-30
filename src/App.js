@@ -67,8 +67,9 @@ class App extends Component {
         <BurgerBuilder
            ingredientsList={this.state.ingredients}
            addIngr={this.addIngr}
-           price={this.state.price} />
-
+           price={this.state.price}
+           chosenIng={this.state.chosenIng}
+        />
          <Burger myBurger={this.state.chosenIng} removeIng={this.removeIng}/>
       </Layout>
     );

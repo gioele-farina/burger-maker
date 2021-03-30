@@ -1,0 +1,46 @@
+.orderButton {
+  padding: 7px 10px;
+  font-size: 17px;
+  cursor: pointer;
+  color: white;
+  background-color: #f3904e;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.orderButton:hover {
+  filter: brightness(1.2);
+}
+.orderButton.disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backdrop.disabled {
+  display: none;
+}
+
+.summary {
+  width: 60%;
+  min-width: 300px;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.summary ul {
+  list-style: none;
+}

@@ -15,7 +15,7 @@
 }
 
 .ingredientsList ul li:hover .addButton {
-  filter: brightness(1.2);  
+  filter: brightness(1.2);
 }
 
 .ingName {
@@ -33,4 +33,10 @@
 .nameContainer {
   display: flex;
   align-items: center;
+}
+
+.finalPrice {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
 }

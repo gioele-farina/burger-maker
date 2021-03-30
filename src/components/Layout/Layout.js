@@ -6,7 +6,7 @@ import classes from './Layout.css';
 const layout = (props) => {
   return (
     <Wrapper>
-      <div>Toolbar, SideDrawer, Backdrop</div>
+      <nav className={classes.navBar}><h2>Burger Builder</h2></nav>
 
       <main className={classes.container}>
         {props.children}
